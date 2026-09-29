@@ -1,0 +1,16 @@
+name: roomflow
+services:
+  roomflow:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      PORT: 3000
+      JWT_SECRET: ${JWT_SECRET:?Set JWT_SECRET in .env before starting Docker}
+      APP_URL: ${APP_URL:-http://localhost:3000}
+      NOTIFY_BEFORE_MINUTES: ${NOTIFY_BEFORE_MINUTES:-10}
+    restart: unless-stopped
+    volumes:
+      - roomflow_data:/app/data
+volumes:
+  roomflow_data:
