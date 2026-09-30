@@ -21,7 +21,7 @@ Find the right room, book a time that works, and keep your team in sync. RoomFlo
 
 The screenshots and recording show the actual English interface. Open `docs/demo/index.html` locally, or host it as a static page alongside the media files.
 
-Source repository: [Theinet/RoomFlow](https://github.com/Theinet/RoomFlow) (private; repository access required).
+Source repository: [Theinet/RoomFlow](https://github.com/Theinet/RoomFlow).
 
 ## Try it locally
 
@@ -152,3 +152,7 @@ Use fictional data. A real deployment needs restricted enrollment, real email ve
 The server writes structured JSON logs to its console: request ID, method, path (without query parameters), response status, duration, startup events, verification-link creation with a user ID, and errors. Request bodies, authorization headers, and verification URLs are not deliberately logged. Inspect Docker logs with `docker compose logs -f roomflow`.
 
 There is no integrated visitor analytics or session recording. Google Fonts supplies the typefaces, so the browser makes external font requests. The browser stores the session token, language preference, and sound preference locally. Hosting providers may have their own logs.
+
+## License
+
+Copyright (c) 2026 THE INET™. All rights reserved. RoomFlow is proprietary. Viewing for evaluation is permitted; other use requires prior written permission as described in [LICENSE](LICENSE). Third-party components retain their own licenses.

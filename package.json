@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "private": true,
+  "license": "UNLICENSED",
   "engines": { "node": "22.x" },
   "keywords": [
     "meeting-rooms", "booking", "product-presentation"
